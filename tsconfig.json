@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "C:/Users/parra/OneDrive/Documentos/PROYECTS/spotify",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "src/*"
