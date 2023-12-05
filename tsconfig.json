@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "C:/Users/parra/OneDrive/Documentos/PROYECTS/spotify",
     "paths": {
       "@/*": [
         "src/*"
@@ -11,10 +11,12 @@
       "@/icons": [
         "src/icons/*"
       ],
-      "@/lib":[
+      "@/lib": [
         "src/lib/*"
       ]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   },
   "extends": "astro/tsconfigs/strict"
 }
