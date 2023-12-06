@@ -55,14 +55,23 @@ export const playlists: Playlist[] = [
       "https://f4.bcbits.com/img/a2793859494_16.jpg",
     artists: ["Chau Saura", "amies", "kyu"],
   },
+  // {
+  //   id: '6',
+  //   albumId: 6,
+  //   title: "Like a Necessity",
+  //   color: colors.orange,
+  //   cover:
+  //     "https://f4.bcbits.com/img/a0363730459_16.jpg",
+  //   artists: ["WFS", "Nadav Cohen"],
+  // },
   {
-    id: '6',
-    albumId: 6,
-    title: "Like a Necessity",
-    color: colors.orange,
+    id: '7',
+    albumId: 7,
+    title: "New Jeans",
+    color: colors.blue,
     cover:
-      "https://f4.bcbits.com/img/a0363730459_16.jpg",
-    artists: ["WFS", "Nadav Cohen"],
+      "https://i.scdn.co/image/ab6761610000e5eb5da361915b1fa48895d4f23f",
+    artists: ["Minji", "Hanni", "Danielle", "Haerin", "Hyeins"],
   },
 ];
 
@@ -317,5 +326,14 @@ export const songs: Song[] = [
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "4:20"
+  },
+  {
+    "id": 1,
+    "albumId": 7,
+    "title": "Super Shy",
+    "image": "https://i.scdn.co/image/ab67616d00001e020744690248ef3ba7b776ea7b",
+    "artists": ["New Jeans"],
+    "album": "New Jeans",
+    "duration": "2:34"
   },
 ]
