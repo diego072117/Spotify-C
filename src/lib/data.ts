@@ -73,15 +73,6 @@ export const playlists: Playlist[] = [
       "https://i.scdn.co/image/ab6761610000e5eb5da361915b1fa48895d4f23f",
     artists: ["Minji", "Hanni", "Danielle", "Haerin", "Hyeins"],
   },
-  {
-    id: '8',
-    albumId: 8,
-    title: "New Jeans",
-    color: colors.blue,
-    cover:
-      "https://i.scdn.co/image/ab6761610000e5eb5da361915b1fa48895d4f23f",
-    artists: ["Minji", "Hanni", "Danielle", "Haerin", "Hyeins"],
-  },
 ];
 
 export const morePlaylists = playlists.map((item) => ({
@@ -344,5 +335,50 @@ export const songs: Song[] = [
     "artists": ["New Jeans"],
     "album": "New Jeans",
     "duration": "2:34"
+  },
+  {
+    "id": 2,
+    "albumId": 7,
+    "title": "GODS",
+    "image": "https://i.scdn.co/image/ab67616d00001e02e4179b3fb74beaf0cdfa7a13",
+    "artists": ["New Jeans"],
+    "album": "New Jeans",
+    "duration": "3:40"
+  },
+  {
+    "id": 3,
+    "albumId": 7,
+    "title": "OMG",
+    "image": "https://i.scdn.co/image/ab67616d0000b273d70036292d54f29e8b68ec01",
+    "artists": ["New Jeans"],
+    "album": "New Jeans",
+    "duration": "3:32"
+  },
+  {
+    "id": 4,
+    "albumId": 7,
+    "title": "Ditto",
+    "image": "https://i.scdn.co/image/ab67616d0000b273edf5b257be1d6593e81bb45f",
+    "artists": ["New Jeans"],
+    "album": "New Jeans",
+    "duration": "3:05"
+  },
+  {
+    "id": 5,
+    "albumId": 7,
+    "title": "Ditto",
+    "image": "https://i.scdn.co/image/ab67616d00001e020744690248ef3ba7b776ea7b",
+    "artists": ["New Jeans"],
+    "album": "New Jeans",
+    "duration": "2:31"
+  },
+  {
+    "id": 6,
+    "albumId": 7,
+    "title": "Ditto",
+    "image": "https://i.scdn.co/image/ab67616d0000b2739d28fd01859073a3ae6ea209",
+    "artists": ["New Jeans"],
+    "album": "New Jeans",
+    "duration": "2:59"
   },
 ]
