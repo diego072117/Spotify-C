@@ -55,18 +55,27 @@ export const playlists: Playlist[] = [
       "https://f4.bcbits.com/img/a2793859494_16.jpg",
     artists: ["Chau Saura", "amies", "kyu"],
   },
-  // {
-  //   id: '6',
-  //   albumId: 6,
-  //   title: "Like a Necessity",
-  //   color: colors.orange,
-  //   cover:
-  //     "https://f4.bcbits.com/img/a0363730459_16.jpg",
-  //   artists: ["WFS", "Nadav Cohen"],
-  // },
+  {
+    id: '6',
+    albumId: 6,
+    title: "Like a Necessity",
+    color: colors.orange,
+    cover:
+      "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    artists: ["WFS", "Nadav Cohen"],
+  },
   {
     id: '7',
     albumId: 7,
+    title: "New Jeans",
+    color: colors.blue,
+    cover:
+      "https://i.scdn.co/image/ab6761610000e5eb5da361915b1fa48895d4f23f",
+    artists: ["Minji", "Hanni", "Danielle", "Haerin", "Hyeins"],
+  },
+  {
+    id: '8',
+    albumId: 8,
     title: "New Jeans",
     color: colors.blue,
     cover:
