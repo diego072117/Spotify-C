@@ -31,7 +31,9 @@ const { title } = Astro.props;
         <slot />
       </main>
 
-      <footer class="[grid-area:player] h-[80px]"><Player client:load transition:name="media-player" transition:persist /></footer>
+      <footer class="[grid-area:player] h-[80px]">
+        <Player client:load transition:name="media-player" transition:persist />
+      </footer>
     </div>
     <style>
       #app {
@@ -48,6 +50,10 @@ const { title } = Astro.props;
       html {
         font-family: "CircularStd", system-ui, sans-serif;
         background: #000;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
       }
 
       @font-face {
