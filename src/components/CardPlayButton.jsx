@@ -5,7 +5,6 @@ export function CardPlayButton({ id, size = "small" }) {
   const { isPlaying, currentMusic, setIsPlaying, setCurrentMusic } =
     usePlayerStore((state) => state);
   const isPlayingPlaylist = isPlaying && currentMusic?.playlist.id === id;
-
   const handleClick = () => {
     if (isPlayingPlaylist) {
       setIsPlaying(false);
@@ -28,9 +27,40 @@ export function CardPlayButton({ id, size = "small" }) {
       className="card-play-button rounded-full bg-green-500 p-4 hover:scale-105 transition hover:bg-green-400"
     >
       {isPlayingPlaylist ? (
-        <Pause className={iconClassName} />
+        <Pause className={iconClassName} color="#000" />
       ) : (
-        <Play className={iconClassName} />
+        <Play className={iconClassName} color="#000" />
+      )}
+    </button>
+  );
+}
+
+export function CardPlayButtonId({ id, songId }) {
+  const { isPlaying, currentMusic, setIsPlaying, setCurrentMusic } =
+    usePlayerStore((state) => state);
+  const isPlayingPlaylist = isPlaying && currentMusic?.playlist.id === id;
+  const isPlayingSong = currentMusic?.song?.id === songId + 1;
+
+  const handleClick = () => {
+    if (isPlayingPlaylist && isPlayingSong) {
+      setIsPlaying(false);
+      return;
+    }
+    fetch(`/api/get-info-playlist.json?id=${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        const { songs, playlist } = data;
+        setIsPlaying(true);
+        setCurrentMusic({ songs, playlist, song: songs[songId] });
+      });
+  };
+
+  return (
+    <button onClick={handleClick} className="text-zinc-400">
+      {isPlayingPlaylist && isPlayingSong ? (
+        <Pause color="#fff" />
+      ) : (
+        <Play color="#fff" />
       )}
     </button>
   );

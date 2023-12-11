@@ -1,12 +1,13 @@
 ---
-import Time from "@/icons/Time.astro"
-import { type Song } from "@/lib/data"
+import Time from "@/icons/Time.astro";
+import { type Song } from "@/lib/data";
+import { CardPlayButtonId } from "./CardPlayButton";
 
 interface Props {
-  songs: Song[]
+  songs: Song[];
 }
 
-const { songs } = Astro.props
+const { songs } = Astro.props;
 ---
 
 <table class="table-auto text-left min-w-full divide-y divide-gray-500/20">
@@ -24,7 +25,9 @@ const { songs } = Astro.props
     {
       songs.map((song, index) => (
         <tr class="border-spacing-0 text-gray-300 text-sm font-light hover:bg-white/10 overflow-hidden transition duration-300">
-          <td class="px-4 py-2 rounded-tl-lg rounded-bl-lg w-5">{index + 1}</td>
+          <td class="px-4 py-2 rounded-tl-lg rounded-bl-lg w-5">
+            <CardPlayButtonId client:visible id={song.albumId.toString()} songId={index} />
+          </td>
           <td class="px-4 py-2 flex gap-3">
             <picture class="">
               <img src={song.image} alt={song.title} class="w-11 h-11" />
