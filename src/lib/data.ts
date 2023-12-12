@@ -58,11 +58,11 @@ export const playlists: Playlist[] = [
   {
     id: '6',
     albumId: 6,
-    title: "Like a Necessity",
+    title: "美波",
     color: colors.orange,
     cover:
-      "https://f4.bcbits.com/img/a0363730459_16.jpg",
-    artists: ["WFS", "Nadav Cohen"],
+      "https://i.scdn.co/image/ab6761610000e5ebae291e3c3634447a2a6432de",
+    artists: ["Populares"],
   },
   {
     id: '7',
@@ -326,6 +326,51 @@ export const songs: Song[] = [
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
     "duration": "4:20"
+  },
+  {
+    "id": 1,
+    "albumId": 6,
+    "title": "カワキヲアメク",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e192db03c0db78e0eead6114",
+    "artists": ["美波"],
+    "album": "Populares",
+    "duration": "4:11"
+  },
+  {
+    "id": 2,
+    "albumId": 6,
+    "title": "アメヲマツ、",
+    "image": "https://i.scdn.co/image/ab67616d0000b273656d17184f33544caeae3511",
+    "artists": ["美波"],
+    "album": "Populares",
+    "duration": "4:54"
+  },
+  {
+    "id": 3,
+    "albumId": 6,
+    "title": "ライラック",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e192db03c0db78e0eead6114",
+    "artists": ["美波"],
+    "album": "Populares",
+    "duration": "5:02"
+  },
+  {
+    "id": 4,
+    "albumId": 6,
+    "title": "DROP",
+    "image": "https://i.scdn.co/image/ab67616d0000b273f7d5b2595e437b7e463f71f9",
+    "artists": ["美波"],
+    "album": "Populares",
+    "duration": "5:02"
+  },
+  {
+    "id": 5,
+    "albumId": 6,
+    "title": "Prologue",
+    "image": "https://i.scdn.co/image/ab67616d0000b273e192db03c0db78e0eead6114",
+    "artists": ["美波"],
+    "album": "Populares",
+    "duration": "5:30"
   },
   {
     "id": 1,
