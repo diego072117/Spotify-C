@@ -185,13 +185,14 @@ export function Player() {
       const src = `/music/${playlist?.id}/0${song.id}.mp3`;
       audioRef.current.src = src;
       audioRef.current.volume = volume;
-      audioRef.current.play();
+      isPlaying && audioRef.current.play();
     }
   }, [currentMusic]);
 
   const handleClick = () => {
     setIsPlaying(!isPlaying);
   };
+
   return (
     <div className="flex flex-row justify-between w-full px-1 z-50">
       <div className="w-[200px]">
