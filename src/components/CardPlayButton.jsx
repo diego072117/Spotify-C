@@ -1,4 +1,4 @@
-import { Pause, Play } from "@/components/Player";
+import { Pause, Play } from "@/icons/IconsPlayer";
 import { usePlayerStore } from "@/store/playerStore";
 
 export function CardPlayButton({ id, size = "small" }) {
